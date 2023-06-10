@@ -1,0 +1,165 @@
+@charset "UTF-8";
+* {
+  scrollbar-color: rgb(57, 201, 131) rgba(125, 185, 156, 0.415);
+}
+
+html {
+  background: linear-gradient(to bottom right, rgb(245, 169, 184), rgb(91, 206, 250), rgb(245, 169, 184), rgb(255, 249, 251), rgb(245, 169, 184), rgb(91, 206, 250), rgb(245, 169, 184));
+  background-size: 200% 200%;
+  animation: gradient 20s ease infinite;
+}
+@media print {
+  html {
+    background-color: white;
+    background: none;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.big {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  font: 100% Helvetica, sans-serif;
+  color: rgb(248, 248, 249);
+  background-image: none;
+  background-color: rgba(48, 46, 60, 0.637);
+  border-radius: 6px;
+  padding: 1%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.markdown tr,
+.markdown img {
+  page-break-inside: avoid;
+}
+.markdown table {
+  border-collapse: collapse;
+  width: 50vw;
+}
+.markdown table tbody tr,
+.markdown table tbody td,
+.markdown table tbody th,
+.markdown table thead tr,
+.markdown table thead td,
+.markdown table thead th {
+  border: 1px solid #ddd;
+}
+.markdown table tbody {
+  border-collapse: collapse;
+}
+.markdown table tbody td,
+.markdown table tbody th {
+  background-color: rgb(28, 16, 44);
+}
+.markdown table thead tr,
+.markdown table thead th {
+  background-color: rgb(25, 91, 60);
+}
+.markdown p,
+.markdown pre,
+.markdown a,
+.markdown ul {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.markdown p right,
+.markdown pre right,
+.markdown a right,
+.markdown ul right {
+  float: right;
+}
+.markdown a {
+  color: rgb(49, 137, 96);
+  padding: 0%;
+  margin: 0%;
+}
+.markdown a:hover {
+  color: rgb(57, 201, 131);
+}
+.markdown pre {
+  border-radius: 4px;
+  padding: 0.6rem;
+  background-color: rgb(28, 16, 44);
+  overflow-x: scroll;
+  page-break-inside: avoid;
+}
+.markdown pre code {
+  background-color: rgb(28, 16, 44);
+}
+.markdown blockquote {
+  margin-left: 2vw;
+}
+.markdown blockquote * {
+  margin-left: 0vw;
+  margin-right: 0vw;
+  border-left: 4px solid rgb(57, 201, 131);
+  padding: 1rem;
+}
+.markdown hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 2px solid rgb(57, 201, 131);
+}
+.markdown .top {
+  margin: 0%;
+}
+.markdown h1 {
+  text-align: center;
+}
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.markdown ul {
+  list-style: none;
+  padding-left: 1.8em;
+}
+.markdown ul li {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.markdown ul li p {
+  display: inline;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+.markdown ul li::before {
+  content: "•";
+  font-weight: bolder;
+  color: rgb(57, 201, 131);
+  display: inline-block;
+  width: 0.7em;
+  margin-left: -1rem;
+}
+.markdown p code {
+  background-color: rgb(28, 16, 44);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 3px;
+}/*# sourceMappingURL=styles.css.map */
